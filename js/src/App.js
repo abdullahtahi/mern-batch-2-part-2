@@ -9,7 +9,7 @@ function App() {
     quantity:10
   })
    const update=()=>{
-  setstate({...state,price:300}) 
+  setstate({...state,price:state.price+300}) 
   }
   return (
     <div className="container">
