@@ -1,14 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import card1 from '../../assert/card1.png'
-
-export default function Card() {
-    return (
-        <div className="col-md-4">
+import '../card/Card.css'
+export default function Card(props) {
+const [product, setproduct] = useState(props.pro)
+  
+return (
+        <div className="col-md-4 cards-1" className="col-lg-4 d-flex align-items-stretch">
             <div className="card">
   <img src={card1} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title">{product.title}</h5>
+    <p className="card-text">{product.description}</p>
     <a href="#" className="btn btn-primary">Go somewhere</a>
   </div>
 </div>
