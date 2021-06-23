@@ -1,9 +1,12 @@
+import card1 from "../src/assert/card1.png"
+  
 export const products = [
+    
     {
         id: 1,
         title: "Krunch Burger",
         slug: "krunch-burger",
-        image: "/images/products/Bone-kfc.png",
+        image: {card1},
         description: "Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce with fresh lettuce.",
         price: 195,
         stock: 10,

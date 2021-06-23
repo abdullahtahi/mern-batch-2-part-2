@@ -6,6 +6,7 @@ import {products} from "../src/Data";
 import Login from "../src/pages/login/Login"
 import Register from "../src/pages/register/Register"
 import Notfound from '../src/pages/notfound/Notfound';
+import Detailpage from './pages/detailpage/Detailpage'
 import {
     BrowserRouter as Router,
     Switch,
@@ -27,6 +28,10 @@ function App() {
            <Route exact path="/">
            <Home Product={products}/> 
            </Route>
+           <Route exact path="/product/:slug">
+   <Detailpage/>            
+   </Route>
+
            <Route exact path="*">
            <Notfound/>
            </Route>
