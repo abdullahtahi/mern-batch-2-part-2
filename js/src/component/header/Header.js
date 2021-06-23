@@ -1,17 +1,23 @@
 import "../header/Header.css"
 import React from'react'
 import kfclogo from'../../assert/kfclogo.png'
-function Header(){
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";function Header(){
 return (
         <div className="header-wrapper" >
             <div className="header-inner">
     <div className="item">
-    <img src={kfclogo}alt=""/>
+   <Link to="/"><img src={kfclogo}alt=""/></Link>
+    
     </div>
     <div className="item">
 <ul>
-    <li><a href="#">setlocation</a></li>
-    <li><a href="#">Register/signup</a></li>
+    <li><Link to="/account/Login">setlocation</Link></li>
+    <li><Link to="/account/register">Register/signup</Link></li>
     
 </ul>
 </div>
