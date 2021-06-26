@@ -20,8 +20,9 @@ return (
     </div>
     <div className="item">
 <ul>
-    <li><Link to="/account/Login">setlocation</Link></li>
-    <li><Link to="/account/register">Register/signup</Link></li>
+    <li><Link to="/account/register">setlocation</Link></li>
+    {/* <li><Link to="/account/register">Register/signup</Link></li> */}
+    <li><Link to="/account/Login">Register/signin</Link></li>
 </ul>
 </div>
             </div>

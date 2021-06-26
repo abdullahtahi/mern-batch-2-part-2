@@ -33,7 +33,7 @@ function App() {
            <Route exact path="/product/:slug">
             <Detailpage/>            
             </Route>
-            <Route  exact path="/collection/:col">
+            <Route  exact path="/collection/:col ">
           <Product/>
         </Route>
          <Route exact path="*">
