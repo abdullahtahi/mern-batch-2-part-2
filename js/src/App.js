@@ -7,17 +7,19 @@ import Login from "../src/pages/login/Login"
 import Register from "../src/pages/register/Register"
 import Notfound from '../src/pages/notfound/Notfound';
 import Detailpage from './pages/detailpage/Detailpage'
+import Product from '../src/pages/product/Product'
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Link
   } from "react-router-dom";
 function App() {
 
     return (
     <div className="container">
     <Router>
-    <Header/>
+    <Header Products={products}/>
        <Switch>
            <Route exact path="/account/Login">
            <Login/>
@@ -29,13 +31,15 @@ function App() {
            <Home Product={products}/> 
            </Route>
            <Route exact path="/product/:slug">
-   <Detailpage/>            
-   </Route>
-
-           <Route exact path="*">
+            <Detailpage/>            
+            </Route>
+            <Route  exact path="/collection/:col">
+          <Product/>
+        </Route>
+         <Route exact path="*">
            <Notfound/>
            </Route>
-
+           
        </Switch>
 
    </Router>

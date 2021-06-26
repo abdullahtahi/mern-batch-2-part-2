@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Slider from'../../component/slider/Slider'
 import Card from '../../component/card/Card' 
 import Footer from '../../component/footer/Footer'
+import Header from '../../component/header/Header'
 function Home(props) {
 const [product, setproduct] = useState(props.Product)
     return (
@@ -13,9 +14,7 @@ const [product, setproduct] = useState(props.Product)
     {
         product.map((p_loop,Ind)=><Card className="card" key={Ind} pro={p_loop} />)
         }
-        
-
-           </div> 
+        </div> 
            <Footer/>
         </div>
     )

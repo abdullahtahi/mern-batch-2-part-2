@@ -383,3 +383,42 @@ export const products = [
     }
 
 ]
+export const catagorys=[
+{
+    title:"everyday value",
+    category: "everyday-value"
+},
+{
+    title:"MAKE IT A MEAL",
+    category: "make-it-a-meal"
+},
+{
+    title:"SIGNATURE BOX",
+    category: "signature-box"
+},
+{
+    title:"SHARING",
+    category: "sharing"
+},
+{
+    title:"PROMOTIONS",
+    category: "promotions"
+},
+{
+    title:"SNACKES",
+    category: "snacks"
+},
+{
+    title:"MIGNIGHT DEALS",
+    category: "midnight-deals"
+}
+]
+// export const cata=
+// ["everyday-value",
+//     "make-it-a-meal",
+//     "signature-box",
+//     "sharing",
+//     "promotions",
+//     "snacks",
+//     "midnight-deals"
+// ]
